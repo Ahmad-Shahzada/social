@@ -1,13 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Camera, LayoutGrid, Video } from 'lucide-react';
+import img1 from '../../assets/images/hero.png';
+import img2 from '../../assets/images/capture1.png';
+import img3 from '../../assets/images/capture2.png';
+import img4 from '../../assets/images/capture3.png';
+
+
+
 
 // Images array (same as yours)
 const heroImages = [
-  "/images/hero.png",
-  "/images/capture1.png",
-  "/images/capture2.png",
-  "/images/capture3.png"
+  img1,
+  img2,
+  img3,
+  img4
 ];
 
 // --- NEW: Button labels array ---

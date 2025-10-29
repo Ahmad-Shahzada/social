@@ -1,4 +1,5 @@
 import React from 'react'
+import img1 from '../../assets/images/z.png'
 
 const Dream = () => {
     return (
@@ -8,7 +9,7 @@ const Dream = () => {
                     <div className="flex justify-center items-center py-10">
                         <div className="image-container">
                             <img
-                                src="/images/z.png" alt="3D rotating item"
+                                src={img1} alt="3D rotating item"
                                 className="rotating-image"
                             />
                         </div>

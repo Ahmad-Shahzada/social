@@ -1,4 +1,15 @@
 import { useState } from 'react';
+import img1 from '../../assets/images/Desktop.png'
+import img2 from '../../assets/images/Desktop2.png'
+import img3 from '../../assets/images/Desktop3.png'
+import img4 from '../../assets/images/Desktop4.png'
+import img5 from '../../assets/images/Desktop5.png'
+import img6 from '../../assets/images/Desktop6.png'
+import img7 from '../../assets/images/Desktop7.png'
+
+
+
+
 
 // --- DATA (No Changes) ---
 // (Ye data array waise hi rahega, aap bas descriptions aur imageSrc update kar lein)
@@ -7,43 +18,43 @@ const featureItems = [
     id: 1,
     title: 'Plug and Play Setup',
     description: 'No developers or setup required. Our mirror auto-connects to the cloud dashboard.',
-    imageSrc: '/images/Desktop.png' 
+    imageSrc: {img1}
   },
   {
     id: 2,
     title: 'Design and Display',
     description: 'Capture memories with ease. Craft interactive on-site experiences with our drag and drop editor. Total control, Fully customizable. Guest experience your brand, not ours.',
-    imageSrc: '/images/Desktop2.png' 
+    imageSrc: {img2} 
   },
   {
     id: 3,
     title: 'Remote control instantly across multiple locations',
     description: 'Instantly update visuals, offers, or messaging across one or hundreds of mirrors through built-in CMS.',
-    imageSrc: '/images/Desktop3.png' 
+    imageSrc: {img3} 
   },
   {
     id: 4,
     title: 'Secure & Compliant Data',
     description: 'Capture user data responsibly and build long-term trust. Your data is stored in your own cloud, GDPR-compliant and privacy-first by design.',
-    imageSrc: '/images/Desktop4.png' 
+    imageSrc: {img4} 
   },
    {
     id: 5,
     title: 'Real-time Analytics and insights',
     description: 'View live performance metrics and conversion data in one dashboard. Export analytics for deeper insights.',
-    imageSrc: '/images/Desktop5.png' 
+    imageSrc: {img5} 
   },
    {
     id: 6,
     title: 'Stay connected with automated campaigns',
     description: 'Keep the conversation going with your guests after every interaction. Automate follow-ups, deliver personalized content, and build ongoing engagement.',
-    imageSrc: '/images/Desktop6.png' 
+    imageSrc: {img6} 
   },
     {
     id: 7,
     title: 'Built for enterprise growth',
     description: 'Scale seamlessly across locations and markets. Integrate with Meta, TikTok, and WhatsApp for maximum social reach.',
-    imageSrc: '/images/Desktop7.png' 
+    imageSrc: {img7} 
   },
 ];
 
