@@ -3,8 +3,8 @@ import Sectionwraper from './Sectiowraper';
 import { ChevronRight, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import URLS from '../config/urls.config';
-import img1 from '../../src/assets/images/logo.png';
-import img2 from '../../src/assets/images/logo2.png'
+import img1 from '../assets/images/logo.png';
+import img2 from '../assets/images/logo2.png'
 const Navbar = () => {
     // State to manage the mobile menu (open/closed)
     const [isMenuOpen, setIsMenuOpen] = useState(false);
