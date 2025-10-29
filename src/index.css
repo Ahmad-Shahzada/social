@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+/* RotatingImage.css */
+
+.image-container {
+  /* This creates the 3D perspective for the child element */
+  perspective: 1000px; /* Adjust for more/less perspective distortion */
+  width: fit-content; /* Or define a specific width/height */
+  height: fit-content;
+}
+
+.rotating-image {
+  /* Set initial size or adjust as needed */
+  width: 100px; /* Example size */
+  height: auto; 
+  display: block; /* Remove extra space below image */
+
+  /* Apply the 3D rotation animation */
+  animation: rotate3D 5s infinite linear;
+  
+  /* Preserve 3D transforms during animation */
+  transform-style: preserve-3d; 
+}
+
+/* Define the 3D rotation animation */
+@keyframes rotate3D {
+  from {
+    transform: rotateY(0deg); /* Start at 0 degrees rotation around Y axis */
+  }
+  to {
+    transform: rotateY(360deg); /* Rotate 360 degrees around Y axis */
+  }
+}
+
+/* 2 */
+
+
+.image2-container {
+  /* This creates the 3D perspective for the child element */
+  perspective: 1000px; /* Adjust for more/less perspective distortion */
+  width: fit-content; /* Or define a specific width/height */
+  height: fit-content;
+}
+
+.rotating2-image {
+  /* Set initial size or adjust as needed */
+  width: 400px; /* Example size */
+  height: auto; 
+  display: block; /* Remove extra space below image */
+
+  /* Apply the 3D rotation animation */
+  animation: rotate3D 5s infinite linear;
+  
+  /* Preserve 3D transforms during animation */
+  transform-style: preserve-3d; 
+}
+
+/* Define the 3D rotation animation */
+@keyframes rotate3D {
+  from {
+    transform: rotateY(0deg); /* Start at 0 degrees rotation around Y axis */
+  }
+  to {
+    transform: rotateY(360deg); /* Rotate 360 degrees around Y axis */
+  }
+}
+
+
+/* Gradient animation (unchanged) */
+@keyframes riseGradients {
+  from {
+    /* Start at the bottom (solid blue) */
+    background-position: 0% 100%;
+  }
+  to {
+    /* End at the top (gradient) */
+    background-position: 0% 0%;
+  }
+}
+
+/* Yahan changes kiye gaye hain */
+.animate-gradient-rises {
+  background-image: linear-gradient(
+    to bottom,
+    white 15%,          /* Oopar Black se start ho */
+    #5700FB 35%,     /* Change: 15% tak Blue-700 mein fade ho (halka sa black) */
+    #0044ff 25%,     /* Baaki oopar ka hissa solid Blue-700 */
+    #5700FB 20.01%,  /* Neeche ka hissa solid Blue-700 se start ho */
+    #5700FB 100%     /* Aakhir tak solid Blue-700 rahe */
+  );
+
+  /* Yeh wesa hi rahega */
+  background-size: 100% 200%;
+  animation: riseGradient 1s ease-out;
+}
+
+/* Gradient animation (unchanged) */
+@keyframes riseGradient {
+  from {
+    /* Start at the bottom (solid blue) */
+    background-position: 0% 100%;
+  }
+  to {
+    /* End at the top (gradient) */
+    background-position: 0% 0%;
+  }
+}
+
+/* Yahan changes kiye gaye hain */
+.animate-gradient-rise {
+  background-image: linear-gradient(
+    to bottom,
+    black 15%,          /* Oopar Black se start ho */
+    #5700FB 35%,     /* Change: 15% tak Blue-700 mein fade ho (halka sa black) */
+    #3f6be4 25%,     /* Baaki oopar ka hissa solid Blue-700 */
+    #5700FB 20.01%,  /* Neeche ka hissa solid Blue-700 se start ho */
+    #5700FB 100%     /* Aakhir tak solid Blue-700 rahe */
+  );
+
+  /* Yeh wesa hi rahega */
+  background-size: 100% 200%;
+  animation: riseGradient 1s ease-out;
+}
