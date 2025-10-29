@@ -5,6 +5,9 @@ import img1 from '../../assets/images/hero.png';
 import img2 from '../../assets/images/capture1.png';
 import img3 from '../../assets/images/capture2.png';
 import img4 from '../../assets/images/capture3.png';
+import img5 from '../../assets/images/Container.png';
+import img6 from '../../assets/images/logos.png';
+
 
 
 
@@ -197,7 +200,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="mb-4 text-center">
-                    <img src="/images/logos.png" alt="" className="h-10 " />
+                    <img src={img6} alt="" className="h-10 " />
                   </div>
                 </div>
 
@@ -242,7 +245,7 @@ const Hero = () => {
         <div class="max-w-6xl w-full flex flex-col-reverse sm:flex-col md:flex-row items-center bg-[#5700FB]">
 
           <div class="relative w-full md:w-1/2 flex items-center justify-center min-h-[400px] md:min-h-[600px] lg:min-h-[700px] xl:min-h-[800px] flex-grow">
-            <img src="/images/Container.png" alt="" />
+            <img src={img5} alt="" />
           </div>
 
           <div class="w-full md:w-1/2 text-white p-3 md:p-8 lg:p-12 mt-8 md:mt-0">

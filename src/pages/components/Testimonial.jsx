@@ -1,53 +1,57 @@
 import React, { useState, useEffect } from 'react';
 import { AppWindow, ArrowLeft, ArrowRight } from 'lucide-react';
+import img1 from '../../assets/images/testlogo.png';
+import img2 from '../../assets/images/Avatar Image.png';
+import img3 from '../../assets/images/Avatar Image (1).png';
+import img4 from '../../assets/images/z.png'
 
 // --- (Your testimonialData array goes here) ---
 const testimonialData = [
     {
         id: 1,
-        logoUrl: "/images/testlogo.png", // Replace with your logo path
+        logoUrl: img1, // Replace with your logo path
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-        avatarUrl: "/images/Avatar Image.png", // Replace with avatar path
+        avatarUrl: img2, // Replace with avatar path
         name: "Name Surname 1",
         title: "Position, Company name"
     },
     {
         id: 2,
-        logoUrl: "/images/testlogo.png",
+        logoUrl: img1,
         quote: "Duis cursus, mi quis viverra ornare. Suspendisse varius enim in eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        avatarUrl: "/images/Avatar Image (1).png",
+        avatarUrl: img3,
         name: "Name Surname 2",
         title: "Position, Company name"
     },
     {
         id: 3,
-        logoUrl: "/images/testlogo.png",
+        logoUrl: img1,
         quote: "Suspendisse varius enim in eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, mi quis viverra ornare.",
-        avatarUrl: "/images/Avatar Image.png",
+        avatarUrl: img2,
         name: "Name Surname 3",
         title: "Position, Company name"
     },
     {
         id: 4,
-        logoUrl: "/images/testlogo.png",
+        logoUrl: img1,
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-        avatarUrl: "/images/Avatar Image (1).png",
+        avatarUrl: img3,
         name: "Name Surname 4",
         title: "Position, Company name"
     },
     {
         id: 5,
-        logoUrl: "/images/testlogo.png",
+        logoUrl: img1,
         quote: "Duis cursus, mi quis viverra ornare. Suspendisse varius enim in eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        avatarUrl: "/images/Avatar Image (1).png",
+        avatarUrl: img3,
         name: "Name Surname 5",
         title: "Position, Company name"
     },
     {
         id: 6,
-        logoUrl: "/images/testlogo.png",
+        logoUrl: img1,
         quote: "Suspendisse varius enim in eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, mi quis viverra ornare.",
-        avatarUrl: "/images/Avatar Image (1).png",
+        avatarUrl: img3,
         name: "Name Surname 6",
         title: "Position, Company name"
     }
@@ -204,7 +208,7 @@ const TestimonialSlider = () => {
                     <div className="flex justify-center items-center">
                         <div className="image-container">
                             <img
-                                src="/images/z.png" alt="3D rotating item"
+                                src={img4} alt="3D rotating item"
                                 className="rotating-image"
                             />
                         </div>

@@ -1,6 +1,14 @@
 import React from 'react'
 import Dream from './Dream'
 import Sectionwraper from '../../main/Sectiowraper'
+import img1 from '../../assets/images/Card5.png';
+import img2 from '../../assets/images/Card6.png';
+import img3 from '../../assets/images/Card4.png';
+import img4 from '../../assets/images/Card3.png';
+import img5 from '../../assets/images/Card5.png';
+import img6 from '../../assets/images/Card6.png';
+
+
 
 const MirrorBlock = () => {
   return (
@@ -9,19 +17,19 @@ const MirrorBlock = () => {
       <div className="flex flex-col lg:flex-row justify-center items-start gap-6 ">
         {/* Left side */}
         <div className="flex flex-col gap-6 px-3 md:px-0">
-          <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
-          <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
-          <img src="/images/Card4.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+          <img src={img1} alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+          <img src={img2} alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+          <img src={img3} alt="" className="rounded-2xl w-full max-w-lg object-cover" />
         </div>
 
         {/* Right side */}
         <div className="flex flex-col gap-6">
-          <img src="/images/Card3.png" alt="" className="rounded-2xl w-full max-w-lg object-cover px-3 md:px-0" />
+          <img src={img4} alt="" className="rounded-2xl w-full max-w-lg object-cover px-3 md:px-0" />
           <div className="gap-6 justify-between items-center px-3 md:px-0">
             {/* <img src="/images/Card5.png" alt="" className="rounded-2xl w-full max-w-lg object-cover block sm:hidden" />
         <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover  block sm:hidden" /> */}
-            <img src="/images/Card5.png" alt="" className="rounded-2xl pb-6 w-full max-w-lg object-cover" />
-            <img src="/images/Card6.png" alt="" className="rounded-2xl w-full max-w-lg object-cover" />
+            <img src={img5} alt="" className="rounded-2xl pb-6 w-full max-w-lg object-cover" />
+            <img src={img6} alt="" className="rounded-2xl w-full max-w-lg object-cover" />
           </div>
         </div>
       </div>
