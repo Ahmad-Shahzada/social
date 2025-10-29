@@ -20,7 +20,7 @@ const Navbar = () => {
                             <Link to={URLS.HOME}>
                                 <div className="flex items-center">
                                     <img
-                                        src="/images/logo.png"
+                                        src="/public/images/logo.png"
                                         alt="Social Mirror Logo"
                                         className="h-16"
                                     />
